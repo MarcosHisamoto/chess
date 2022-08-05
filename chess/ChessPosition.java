@@ -32,6 +32,11 @@ protected Position toPosition() {
 		return new ChessPosition ((char)('a'- position.getColumn()),8 - position.getRow());
 	}
 	
+	public void setValues(int row, char column) {
+		this.row = row;
+		this.column =  column;
+	}
+	
 	@Override
 	public String toString() {
 		return "" + column + row;
